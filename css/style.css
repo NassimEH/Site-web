@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+/* CSS du body où l'on charge l'image de fond, on gère ses propriétés pour qu'elle s'affiche bien et on centre les éléments du body. */
+
+body{
+    width: 100%;
+    height:100%;
+    background-image: url("../images/pole-taverny.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+    align-items: center;
+}
+
+/* Je centre les éléments du header */
+
+header{
+    text-align: center;
+}
+
+/* Je gère les propriétés de la bannière individuellement, ses dimensions, ses marges */
+
+img {
+    width: 97%;
+    height: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:5px;
+}
+
+/* Classe du bouton */
+
+.bouton{
+    display: inline-block;
+    background-color: #dbeca9;
+    border-radius: 10px;
+    border: 1px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 21px;
+    width: 130px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 10px 8px 12px rgba(122, 69, 148, 0.628);
+    margin-top: 2%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff1500e2;
+    font-size: large;
+}
+
+div.content{
+    background: rgba(255, 128, 0, 0.3);
+    width: 75%;
+    height: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 10px 10px 10px #ff760070;
+}
+
+/* Personnalisation du titre en page d'accueil. Transform skew et rotate permet l'effet diagonal */
+
+div.content h1{
+    color:#7f5bd4;
+    text-decoration: underline dashed #7f5bd4;
+    text-shadow: 3px 3px #000;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Verdana;
+    transform: skew(-10deg) rotate(-2deg);
+}
+
+div.content p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/* Conteneur violet qui contient les titres en en-tête dans la page horaire */
+
+div.content_horaires{
+    background: rgb(195, 0, 255);
+    width: 60%;
+    height: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 1.25px 1.25px 1.25px white;
+}
+
+/* Personnalisation du h1 dans horaire */
+
+div.content_horaires h1{
+    color:#000000;
+    text-decoration: underline solid #000000;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Personnalisation du tableau dans horaires */
+
+div.tableau{
+    border-collapse: collapse;
+    opacity: 0.75;
+    min-width: 500px;
+    width: 95%;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border: 2px solid midnightblue;
+    background: #c5eff1;
+    margin-bottom: 100%;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5%;
+    line-height: 160%;
+    text-align: center;
+} 
+
+/* Gestion du corps et lignes du tableau (tr et tbody) */
+
+tbody{
+    height: 40%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+tr{
+    height: 55%;
+    font-size: 1.1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.content_specialites{
+    background: rgb(195, 0, 255);
+    width: 60%;
+    height: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 1.25px 1.25px 1.25px white;
+}
+
+div.content_specialites h1{
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 900;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-decoration: underline dotted;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Personnalisation du sélecteur */
+
+select{
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 47%;
+    margin-right: auto;
+    margin-left: auto;
+    outline:0;
+    box-shadow: 3.25px 3.25px 3.25px rgba(138, 138, 138,1);
+    border:0;
+    background-image: none;
+    background: rgb(240, 240, 240);
+    height: 3em;
+    width: 30em;
+    overflow: hidden;
+    border-radius: .25em;
+    flex: 1;
+    padding: 0.5em;
+    color:rgb(0, 200, 255);
+}
+
+/* Pour la petite flèche du sélecteur */
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top:0;
+}
+
+/* Footer, ses dimensions, ses couleurs, sa position */
+
+footer{
+    background-color: #e8e8e8;
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+    padding: .35%;
+    text-align: center;
+    margin:0;
+    left:0;
+    right: 0;
+}
+
+/* Couleur du "consulter ce site" */
+
+div.footer a{
+    color: #7700ff; 
+}
+

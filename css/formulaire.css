@@ -1,0 +1,323 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+/* CSS du body où l'on charge l'image de fond, on gère ses propriétés pour qu'elle s'affiche bien et on centre les éléments du body. */
+
+body{
+    width: 100%;
+    height:100%;
+    background-image: url("../images/pole-taverny.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+    align-items: center;
+}
+
+/* Je gère les propriétés de la bannière individuellement, ses dimensions, ses marges */
+
+img {
+    width: 97%;
+    height: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:5px;
+}
+
+/* Je centre les éléments du header */
+
+header{
+    text-align: center;
+}
+
+/* Classe du bouton */
+
+.bouton{
+    display: inline-block;
+    background-color: #dbeca9;
+    border-radius: 10px;
+    border: 1px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 21px;
+    width: 130px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 10px 8px 12px rgba(122, 69, 148, 0.628);
+    margin-top: 2%;
+}
+
+div.content{
+    background: rgb(195, 0, 255);
+    width: 60%;
+    height: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 1.25px 1.25px 1.25px white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff1500e2;
+    font-size: large;
+}
+
+h1{
+    text-decoration: underline double #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+fieldset{
+    border-color: white;
+    border-radius: 1em;
+    height: 100%;
+}
+
+
+div.fieldset_a{
+    border-color: white;
+    border-radius: 1em;
+}
+
+div.fieldset_b{
+    border-color: white;
+    border-radius: 1em;
+    height: 100%;
+}
+
+div.fieldset_b h2{
+    margin-right: 70%;
+    margin-left:5%;
+    font-size: medium;
+    margin-top: .5;
+}
+
+div.fieldset_c{
+    border-color: white;
+    border-radius: 1em;
+}
+
+/* Gestion du premier fieldset (premier gros conteneur rose) */
+
+div.fieldset_1{
+    background-color: rgb(250, 192, 255);
+    margin-top: 2%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    border-color:white;
+    height: 30%;
+}
+
+div.fieldset_1b{
+    background-color: rgb(250, 192, 255);
+    margin-top: 2%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    border-color:white;
+    height: 45%;
+}
+
+.table_rdv{
+    line-height: 200%;
+}
+
+/* Gestion du deuxième fieldset (deuxième gros conteneur rose) */
+
+div.fieldset_2{
+    background-color: rgb(250, 192, 255);
+    margin-top: .05%;
+    width: 100%;
+    border-radius: 1em;
+    border-color:white;
+    height: 65%;
+}
+
+/* Gestion du troisième fieldset (troisième gros conteneur rose) */
+
+div.fieldset_3{
+    background-color: rgb(250, 192, 255);
+    margin-top: .05%;
+    width: 100%;
+    border-radius: 1em;
+    border-color:white;
+    height:35%;
+}
+
+/* Conteneur bleu */
+
+div.content_blue{
+    background-color: rgb(154, 255, 255);
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1% ;
+    margin-bottom: 1%;
+    border-color:white;
+    height: 90%;  
+}
+
+#antécédents::placeholder{
+    text-align: center;
+    color:rgb(99, 99, 99);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Personnalisation des champs d'écritures */
+
+#firstname{
+    width:130%;
+    display: list-item;
+}
+
+#lastname{
+    width:130%;
+    display: list-item;
+}
+
+#birth{
+    display: list-item;
+}
+
+#email{
+    width:130%;
+    display: list-item;
+}
+
+#website{
+    width:90%;
+    display: list-item;
+}
+
+/* Couleur des placeholders */
+
+#firstname::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+#lastname::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+#birth::placeholder{
+    color:rgb(110, 110, 110);
+}
+
+#email::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+#website::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+#number::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+#service::placeholder{
+    color:rgb(0, 60, 255);
+}
+
+/* Personnalisation des champs d'écriture part. 2 */
+
+.nom{
+    background-color: rgb(250, 192, 255);
+    padding: 2.5%;
+    border-style:none;
+}
+
+.prénom{
+    background-color: rgb(250, 192, 255);
+    padding: 2.5%;
+    border-style: none;
+}
+
+.nom_rdv{
+    background-color: rgb(250, 192, 255);
+    padding: 1.5%;
+    border-style:none;
+}
+
+.prénom_rdv{
+    background-color: rgb(250, 192, 255);
+    padding: 1.5%;
+    border-style: none;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    line-height: 130%;
+    text-align:center;
+}
+
+tr{
+    margin-bottom: 10%;
+}
+
+.table_2{
+    text-align:left;
+    margin-left: 3%;
+    line-height: 120%;
+}
+
+.table_3{
+    text-align:left;
+    margin-left: 3%;
+    line-height: 180%;
+}
+
+div.content_blue label{
+    color : rgb(79, 79, 79);
+    font-size: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Souligne le "Schéma vaccinal" */
+
+h2{
+    text-decoration: underline;
+}
+
+/* Footer, ses dimensions, ses couleurs, sa position */
+
+footer{
+    background-color: #e8e8e8;
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+    padding: .35%;
+    text-align: center;
+    margin:0;
+    left:0;
+    right: 0;
+}
+
+div.footer a{
+    color: #7700ff; 
+}

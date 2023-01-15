@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="css/formulaire.css" media="all">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <img src="images/medicale-banniere.jpg">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="bouton"><a href="index.html"> Accueil </a></li>
+                    <li class="bouton"><a href="horaires.html"> Horaires </a></li>
+                    <li class="bouton"><a href="specialites.html"> Spécialités </a></li> <!-- Menu -->
+                    <li class="bouton"><a href="priserdv.html"> Rendez-vous </a></li>
+                    <li class="bouton"><a href="formulaire.html"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="fieldset_1"> 
+        <fieldset>
+            <form action="/action_page.php" method="get" enctype="multipart"> <!-- Début du formulaire -->
+            <div class="content_blue">
+                <div class="fieldset_a">
+            <table>
+                <tr> 
+                    <td> <label for ="nom"> Nom : </label> </td>
+                    <td> <input class="nom" id="lastname" name="nom" type ="text" placeholder="votre nom" /> </td>
+                </tr>
+                <tr>
+                    <td> <label for ="prénom"> Prénom : </label> </td>
+                    <td> <input class= "prénom" id="firstname" name="prénom" type ="text" placeholder="votre prénom" /> </td>
+                </tr>
+                <tr> 
+                    <td> <label for ="datedenaissance"> Date de naissance : </label>  </td>
+                    <td> <input id="birth" name="datedenaissance" type ="date" placeholder="Date de naissance" /> </td>
+                </tr>
+                <tr> 
+                    <td> <label for ="mail"> Mail : </label> </td>
+                    <td> <input id="email" name="mail" type ="email" placeholder="votre email" /> </td>
+                </tr>
+                <tr> 
+                    <td> <label for ="votresite"> Votre site : </label> </td>
+                    <td> <input id="website" name="votre site" type ="url" placeholder="http://www." /> </td>
+                </tr>
+                <tr>
+                    <td> <label for ="genre">  Genre : </label> </td>
+                    <td> <input name = "yy" type="radio" value="vall" /> Homme </td>
+                    <td> <input name = "yy" type="radio" value="vall" /> Femme </td>
+                </tr>
+                <tr> 
+                    <td> <label for ="Pays"> Pays : </label> </td>
+                    <td> <label for="Votre pays"> Votre pays : </label> 
+                    <select name="select">
+                        <optgroup label="Europe">
+                            <option value="1.0"> France </option>
+                            <option value="1.5"> Allemagne </option>
+                            <option value="1.5"> Espagne </option>
+                            </optgroup>
+                        <optgroup label="Afrique">
+                            <option value="5.1"> Tunisie </option>
+                            <option value="5.2"> Algérie </option>   
+                            <option value="5.2"> Maroc </option>
+                        </optgroup>
+                        <optgroup label="Asie">
+                            <option value="1.0"> Japon </option>
+                            <option value="1.5"> Chine </option>
+                            <option value="1.5"> Inde </option>
+                            </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="5.1"> Canada </option>
+                            <option value="5.1"> Etats-Unis </option>
+                        </optgroup>
+                        <optgroup label="Amérique latine">
+                            <option value="5.1"> Brésil </option>
+                            <option value="5.2"> Chili </option>
+                            <option value="5.2"> Mexique </option>
+                            </optgroup>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        </fieldset>
+        <div class="fieldset_2"> 
+        <fieldset>
+            <div class="fieldset_b">
+                <h2> Schéma vaccinal </h2>
+                    <table class="table_2">
+                        <tr> 
+                        </tr>
+                        <tr>
+                            <td> <input name="xx[]" type="checkbox" value="v1" /> Covid - Schéma complet </td>
+                        </tr>
+                        <tr> 
+                            <td> <input name="xx[]" type="checkbox" value="v2" /> Autres vaccins </td>
+                        </tr>
+                        <tr>
+                            <td> </td> 
+                            <td> </td>     
+                        </tr>
+                        <tr> 
+                            <td> <textarea id="antécédents" row=10 cols=50 placeholder = "Vos antécédents médicaux" ></textarea> </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        </fieldset>
+        <div class="fieldset_3">
+        <fieldset>
+            <div class="fieldset_c">
+                <table class="table_3"> 
+                    <tr>
+                        <td> <input id="file" name="fichier" type="file"> </td>
+                    </tr> 
+                    <tr> 
+                        <td> <input type = "reset" value="Effacer" /> 
+                             <input type="submit" value="Envoyer" /> </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br> <br> <br> <br>
+        </fieldset>
+        <footer>
+            En cas d'absence, vous pouvez <a href="https://google.com">consulter ce site</a>  <!-- Pied de page -->
+            <br>
+            Je suis par ailleurs membre de démonstration des MMT
+        </footer>
+    </body>
+</html>
